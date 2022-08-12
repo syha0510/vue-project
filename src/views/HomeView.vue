@@ -1,16 +1,17 @@
 <template>
     <div class="home">
-        
+        <DragTable/>
     </div>
 </template>
 
+
 <script>
-// @ is an alias to /src
 
-
+import DragTable from '@/components/DragTable.vue'
 export default {
+  name:'HomeView',
   components: {
-  
+    DragTable,
 }
 }
 </script>

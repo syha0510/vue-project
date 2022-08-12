@@ -23,33 +23,33 @@ export default {
   },
   data() {
     return {
-      reg: /^(([^<>()\]\\.,;:\s@"]+(\.[^<>()\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,24}))$/,
-        fullscreenLoading: false,
-      data: {
-        email: "",
-        name:"",
-        password: "",
-        repeatpassword:""
-      },
-      errors: [
-        {
-          active: false,
-          errorEmail: ""
+        reg: /^(([^<>()\]\\.,;:\s@"]+(\.[^<>()\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,24}))$/,
+          fullscreenLoading: false,
+        data: {
+          email: "",
+          name:"",
+          password: "",
+          repeatpassword:""
         },
-        {
-          active: false,
-          errorName: ""
-        },
-        {
-          active: false,
-          errorPassword: ""
-        },
-        {
-          active: false,
-          errorRepeatPassword: ""
-        }
-      ]
-    };
+        errors: [
+          {
+            active: false,
+            errorEmail: ""
+          },
+          {
+            active: false,
+            errorName: ""
+          },
+          {
+            active: false,
+            errorPassword: ""
+          },
+          {
+            active: false,
+            errorRepeatPassword: ""
+          }
+        ]
+      };
   },
   methods: {
     Register() {

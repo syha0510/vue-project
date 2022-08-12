@@ -3,7 +3,7 @@
         <el-container>
             <el-header style=" font-size: 12px">
                 <div class="left">
-                    <router-link to="/"><h3>Trang chủ</h3></router-link>
+                    <router-link to="/"><img style="width: 40px;height:40px;margin-top: 22px; " src="../assets/images/logo.jpg"></router-link>
                 </div>
                 <div class="right">
                     <el-dropdown>
@@ -35,8 +35,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-    
+    .el-container{ 
+        min-height: 100vh;
+    }
      .el-header {
             background-color: #409EFF;
             color: #333;
